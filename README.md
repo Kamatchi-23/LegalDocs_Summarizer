@@ -109,7 +109,7 @@ Now you can download and use gated models from Hugging Face in your notebook or 
     - Select the model and click "Generate Summary".
     - View the generated summary and ROUGE scores.
 
-
+![alt text](image.png)
 ## Model Training
 
 - The notebook [`model_finetuning.ipynb`](model_finetuning.ipynb) demonstrates:
