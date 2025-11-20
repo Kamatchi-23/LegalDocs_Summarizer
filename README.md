@@ -1,4 +1,6 @@
 # Legal Text Summarization Application 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A legal text summarization tool leveraging state-of-the-art transformer models (LongT5, GPT-2, Llama3) for automatic summarization and ROUGE score evaluation. This project demonstrates model fine-tuning, evaluation, and a Streamlit-based web interface for interactive summarization.
 
