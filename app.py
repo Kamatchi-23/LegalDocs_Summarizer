@@ -10,11 +10,17 @@ from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 from transformers import AdamW, get_scheduler
 import evaluate
+from dotenv import load_dotenv
+import os
 
 # Define paths to models 
-longt5_model_path = r'C:\Users\kamat\OneDrive\Documents\GitHub\AdvNLP_A3\models\fine_tuned_long_t5_model'
-gpt2_model_path = r'C:\Users\kamat\OneDrive\Documents\GitHub\AdvNLP_A3\models\fine_tuned_gpt2_model'
-llama_model_path = r'C:\Users\kamat\OneDrive\Documents\GitHub\AdvNLP_A3\models\fine_tuned_llama3_model'
+# Load environment variables from .env file
+load_dotenv()
+
+# Define paths to models using environment variables or fallback to default
+longt5_model_path = os.getenv("LONGT5_MODEL_PATH", "models/fine_tuned_long_t5_model")
+gpt2_model_path = os.getenv("GPT2_MODEL_PATH", "models/fine_tuned_gpt2_model")
+llama_model_path = os.getenv("LLAMA_MODEL_PATH", "models/fine_tuned_llama3_model")
 
 # Load LongT5 model and tokenizer
 longt5_tokenizer = AutoTokenizer.from_pretrained(longt5_model_path)
